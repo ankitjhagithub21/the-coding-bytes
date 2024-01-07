@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
+*{
+	
+	outline: none;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+    font-family: 'Maven Pro', sans-serif;
+
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+.dark{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,49 @@
+#menuBtn {
+	opacity: 0;
+	visibility: hidden;
+	display: block;
+	font-size: 28px;
+	z-index: 999;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  @media (max-width:1024px) {
+	#menuBtn {
+	  opacity: 1;
+	  visibility: visible;
+	  
+	}
+  
+	nav {
+	  flex-direction: column;
+	}
+  
+	#navbar {
+	  position: absolute;
+	  height: 100vh;
+	  width: 50%;
+	  top: 0;
+	  flex-direction: column;
+	  font-size: 20px;
+	  right: -100%;
+	  align-items: start;
+	  transition: right 0.7s ease;
+	}
+  
+	#darkMode {
+	  position: fixed;
+	  bottom: 0px;
+	  margin: 10px;
+	}
+  
+	#navbar.active {
+	  right: 0px;
+	}
+  }
+  
+  @media (max-width:768px) {
+	#navbar {
+	  width: 100%;
+	}
+  }
+  

@@ -1,0 +1,27 @@
+#videos{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+}
+
+#videos .card{
+
+    flex: 0 0 auto;
+    min-width: 33.33%;
+    overflow-x: auto;
+    height: 240px;
+}
+
+#videos::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+@media (max-width:500px) {
+    #videos .card{
+        min-width: 100vw;
+    }
+    
+}

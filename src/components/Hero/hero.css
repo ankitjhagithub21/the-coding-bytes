@@ -1,0 +1,51 @@
+.title-font span {
+    display: inline-block;
+    color: #ffc200;
+    animation: fadeIn 3s linear infinite 0s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px); /* Initial position slightly higher */
+    }
+
+    5% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    30% {
+        opacity: 0;
+        transform: translateY(10px); 
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10px); 
+    }
+}
+
+
+
+
+@media (max-width:768px) {
+    .title-font span {
+        width: 100%;
+
+    }
+}
