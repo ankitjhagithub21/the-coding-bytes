@@ -11,7 +11,6 @@ const SingleSubject = () => {
   useEffect(() => {
     const currSub = code.find((c) => c.path === id);
     setSub(currSub);
-console.log(currSub)
     // Set document title dynamically
     if (currSub) {
       document.title = `${currSub.title} - The Coding Byte`;

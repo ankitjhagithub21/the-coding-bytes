@@ -5,7 +5,7 @@ import data from './data';
 const Compiler = () => {
   return (
     <section>
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-24 mx-auto min-h-screen">
         <h1 className="text-3xl font-bold mb-8 text-center" tabIndex="0">
           Choose Your Favorite Compiler
         </h1>

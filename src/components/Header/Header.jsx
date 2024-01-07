@@ -11,6 +11,7 @@ import './header.css';
 const Header = () => {
   const { toggleTheme, isDarkMode } = useTheme();
   const [active, setActive] = useState(false);
+  const [activeLink, setActiveLink] = useState('Home');
 
   const handleClick = () => {
     setActive(false);
@@ -28,7 +29,15 @@ const Header = () => {
         <div className={`flex items-center gap-5 w-full ${active ? 'active' : ''}`} id='navbar'>
           <nav role="navigation" className={`flex gap-7 w-full h-full justify-center items-center lg:-ml-20 ml-0 lg:mt-2 ${isDarkMode ? 'dark' : 'light'}`}>
             {links.map((link) => (
-              <Link key={link.id} to={link.path} className='font-bold hover:text-yellow-500' onClick={handleClick}>
+              <Link
+                key={link.id}
+                to={link.path}
+                className={`font-bold hover:text-yellow-500 ${activeLink === link.pathName ? 'border-b-2 border-yellow-500' : ''}`}
+                onClick={() => {
+                  handleClick();
+                  setActiveLink(link.pathName);
+                }}
+              >
                 {link.pathName}
               </Link>
             ))}

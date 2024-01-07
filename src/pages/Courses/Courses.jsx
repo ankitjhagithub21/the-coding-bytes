@@ -8,7 +8,7 @@ const Courses = () => {
 
     return (
         <section>
-            <div className="container px-5 py-24 mx-auto">
+            <div className="container px-5 py-24 mx-auto min-h-screen">
                 <h1 className="text-4xl font-bold mb-10 text-center">Our Courses</h1>
                 <div className="flex flex-wrap -m-4">
                     {
