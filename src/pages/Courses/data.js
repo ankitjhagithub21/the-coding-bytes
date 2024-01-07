@@ -15,7 +15,7 @@ const courses = [
         id:3,
         name:"Java EE",
         path:"java-ee",
-        image:"/images/language/java-ee.jpg",
+        image:"/images/language/java-ee.webp",
     }
 ]
 
