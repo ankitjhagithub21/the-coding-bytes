@@ -1,7 +1,7 @@
 import React from 'react'
 import { IoMdAdd } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
-const JobBox = ({data}) => {
+const Box = ({data}) => {
     const {id,title,details} = data
     const navigate = useNavigate()
    
@@ -31,4 +31,4 @@ const JobBox = ({data}) => {
     )
 }
     
-export default JobBox
+export default Box

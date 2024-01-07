@@ -11,14 +11,11 @@ const SingleSubject = () => {
   useEffect(() => {
     const currSub = code.find((c) => c.path === id);
     setSub(currSub);
-    // Set document title dynamically
-    if (currSub) {
-      document.title = `${currSub.title} - The Coding Byte`;
-    }
+   
   }, [id]);
 
   if (!sub) {
-    // Handle the case when the subject is not found
+   
     return <p>Subject not found</p>;
   }
 
